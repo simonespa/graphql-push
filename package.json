@@ -11,6 +11,7 @@
   },
   "keywords": [],
   "author": "Simone Spaccarotella <spa.simone@gmail.com>",
+  "license": "GPL-3.0-or-later",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
