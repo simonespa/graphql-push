@@ -1,0 +1,42 @@
+{
+  "name": "graphql-push",
+  "version": "1.0.0",
+  "description": "A GraphQL server/client to test subscriptions.",
+  "scripts": {
+    "server": "tsx watch src/server/index.ts",
+    "client:query": "tsx src/client/query-client.ts",
+    "client:subscribe": "tsx src/client/subscription-client.ts",
+    "trigger": "tsx src/client/trigger.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "Simone Spaccarotella <spa.simone@gmail.com>",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.10.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.10.1",
+  "type": "module",
+  "dependencies": {
+    "@apollo/server": "^4.13.0",
+    "@faker-js/faker": "^10.6.0",
+    "@graphql-tools/schema": "^10.1.3",
+    "cors": "^2.8.6",
+    "express": "^4.22.3",
+    "graphql": "^16.14.2",
+    "graphql-subscriptions": "^3.0.0",
+    "graphql-ws": "^6.3.0",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.25",
+    "@types/node": "^26.6.4",
+    "@types/ws": "^8.18.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
